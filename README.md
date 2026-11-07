@@ -1,5 +1,9 @@
 # 회사/기관 보고서 제출용 PC 보안점검도구 v1.0.0
 
+**[v1.0.0 다운로드 — Windows x64 ZIP](https://github.com/my1stlabs-del/office-pc-audit-report/releases/download/v1.0.0/OfficePcAudit_1.0.0_win-x64.zip)** · [릴리즈 안내](https://github.com/my1stlabs-del/office-pc-audit-report/releases/latest)
+
+ZIP을 모두 압축 해제한 뒤 `OfficePcAudit.exe`를 실행하세요. Windows 10/11 x64 및 .NET Framework 4.8이 필요합니다.
+
 KISA 점검도구가 사라진 뒤, PC 보안점검을 뭘로 하고 보고서는 어떻게 만들어야 할지 막막했습니다. 그래서 AI의 도움을 받아 PC의 보안 상태를 확인하고, 결과를 보고서로 정리할 수 있는 프로그램을 만들었습니다.
 
 E나라도움 등의 PC 보안점검 기준을 참고했고, **자동 점검 19개 항목과 직접 답하는 수동 질문 8개**를 담았습니다. 점검 결과는 HTML 보고서로 저장해 확인하거나 인쇄할 수 있습니다.
