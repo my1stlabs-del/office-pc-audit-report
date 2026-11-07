@@ -129,7 +129,7 @@ namespace OfficePcAudit
                 Assert(AuditEngine.ScanHistory(scanRow,scanNow).Contains("2026-11-06")&&AuditEngine.ScanHistory(scanRow,scanNow).Contains("날짜 확인 필요"),"quick scan and sentinel full scan distinguished");
                 scanRow["FullScanEndTime"]=scanNow.AddHours(1);
                 Assert(AuditEngine.ScanHistory(scanRow,scanNow).Contains("시각 이상"),"future scan timestamp flagged");
-                Assert(Audit.Questions[2].Contains("6개월")&&Audit.Questions[3].Contains("담당자가 아니면")&&Audit.Questions[6].Contains("PC 정리 프로그램")&&!Audit.Questions[6].Contains("라이선스 위반"),"revised manual questions and policy wording");
+                Assert(Audit.Questions[2].Contains("6개월")&&Audit.Questions[3].Contains("담당자가 아니면")&&Audit.Questions[6].Contains("보안관리자")&&Audit.Questions[6].Contains("모름")&&!Audit.Questions[6].Contains("라이선스 위반"),"revised manual questions and policy wording");
                 Assert(Labels.Of(Verdict.Partial)=="부분통과","partial Korean label");
                 var msFinding=AuditEngine.MicrosoftLoginFinding();
                 Assert(msFinding.Status==Verdict.Partial&&msFinding.Value.Contains("미검증")&&msFinding.Value.Contains("복구 정보"),"MS account type alone stays partial with security review");
