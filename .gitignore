@@ -1,0 +1,17 @@
+/old/
+/dist/
+/release/
+/배포버전/
+/.review/
+/tests/bin/
+**/결과출력/
+PC보안점검_*.html
+*.exe
+*.dll
+*.zip
+*.pdb
+*.tmp
+*.log
+.env
+.env.*
+!.env.example
